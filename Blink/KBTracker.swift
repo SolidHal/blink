@@ -116,7 +116,6 @@ class KBObserver: NSObject, UIInteraction {
   }
 
   @objc private func _keyboardWillChangeFrame(notification: Notification) {
-    return
     guard
       let screen = notification.object as? UIScreen,
       let view = self.view,

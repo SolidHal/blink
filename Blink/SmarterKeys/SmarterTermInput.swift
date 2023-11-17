@@ -177,7 +177,7 @@ class CaretHider {
   
   override var inputAssistantItem: UITextInputAssistantItem {
     let item = super.inputAssistantItem
-    if KBTracker.shared.isHardwareKB {
+    if isHardwareKB {
       item.trailingBarButtonGroups = []
       item.leadingBarButtonGroups = []
     } else if _barButtonItemGroup != nil {
