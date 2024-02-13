@@ -157,7 +157,6 @@
 		BD9EA217271F846100874007 /* BlinkLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA20A271F62ED00874007 /* BlinkLogging.swift */; };
 		BD9EA218271F846400874007 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA20C271F664D00874007 /* Publisher.swift */; };
 		BDACC7752A6F100D00D0B261 /* TrialNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACC7742A6F100D00D0B261 /* TrialNotification.swift */; };
-		BDB72CB227A9C08500DCC446 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB72CB127A9C08500DCC446 /* StoreKit.framework */; };
 		BDBFA30D2728914F00C77798 /* BlinkCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBFA3052728914F00C77798 /* BlinkCode.framework */; };
 		BDBFA3122728914F00C77798 /* BlinkCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFA3112728914F00C77798 /* BlinkCodeTests.swift */; };
 		BDBFA3132728914F00C77798 /* BlinkCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBFA3072728914F00C77798 /* BlinkCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -880,7 +879,6 @@
 		BD9EA20C271F664D00874007 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		BD9EA215271F83B400874007 /* BlinkLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkLoggingTests.swift; sourceTree = "<group>"; };
 		BDACC7742A6F100D00D0B261 /* TrialNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialNotification.swift; sourceTree = "<group>"; };
-		BDB72CB127A9C08500DCC446 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BDB8BEA726E008190093BF48 /* OwnAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnAlertController.swift; sourceTree = "<group>"; };
 		BDBFA3052728914F00C77798 /* BlinkCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlinkCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBFA3072728914F00C77798 /* BlinkCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlinkCode.h; sourceTree = "<group>"; };
@@ -1347,7 +1345,6 @@
 				D22277E12A26115300D4C708 /* BlinkSnippets.framework in Frameworks */,
 				B700AED81DD0F2C200100EBF /* CloudKit.framework in Frameworks */,
 				D2334F0425C1C28F00385378 /* tar.xcframework in Frameworks */,
-				BDB72CB227A9C08500DCC446 /* StoreKit.framework in Frameworks */,
 				D2DC5D4B295DB43D007E2B9D /* RevenueCat in Frameworks */,
 				D2A9B2F7272E6F26009FCBDE /* BlinkCode.framework in Frameworks */,
 				D2334EF225C1C28F00385378 /* files.xcframework in Frameworks */,
@@ -1447,7 +1444,6 @@
 			isa = PBXGroup;
 			children = (
 				D2771510287F0EA200D31F4E /* libbuild_cli.a */,
-				BDB72CB127A9C08500DCC446 /* StoreKit.framework */,
 				D248EC542689EAD7009FD817 /* SSHConfig */,
 				D2334ECF25C1C04700385378 /* awk.xcframework */,
 				D2334F0A25C1C3A000385378 /* OpenSSH.xcframework */,

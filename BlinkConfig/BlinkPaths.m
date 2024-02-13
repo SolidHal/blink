@@ -66,6 +66,23 @@ NSString *__iCloudsDriveDocumentsPath = nil;
     
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString *path = [fm containerURLForSecurityApplicationGroupIdentifier:groupID].path;
+    
+    if (path == nil) {
+      NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+      NSArray *bundleIDComponents = [bundleID componentsSeparatedByString:@"."];
+      
+      if ([bundleIDComponents count] > 3) {
+        NSString *assumedTeamID = bundleIDComponents[3];
+        NSString *assumedGroupID = [NSString stringWithFormat:@"%@.%@", groupID, assumedTeamID];
+        
+        path = [fm containerURLForSecurityApplicationGroupIdentifier:assumedGroupID].path;
+      }
+      
+      if (path == nil) {
+        [NSException raise:@"Invalid app group ID" format:@"app group %@ not found", groupID];
+      }
+    }
+    
     __groupContainerPath = path;
   }
   return __groupContainerPath;

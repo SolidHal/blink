@@ -69,8 +69,8 @@ var binaryTargets: [PackageDescription.Target] = [
   ),
   (
     "network_ios",
-    "18e96112ae86ec39390487d850e7732d88e446f9f233b2792d633933d4606d46",
-    "https://github.com/holzschu/network_ios/releases/download/v0.2/network_ios.xcframework.zip"
+    "9d75cc374f409ccb1064a7817163d7e3d6565ad66549a98684bba08c5cd9ffa7",
+    "https://github.com/l2dy-forks/network_ios/releases/download/v0.3.2/network_ios.xcframework.zip"
   )
 ].map { name, checksum, url in PackageDescription.Target.binaryTarget(name: name, url: url, checksum: checksum)}
 
